@@ -285,20 +285,21 @@
         "index": 3
       },
       {
-        "name": "eSearch",
-        "version": "2.17",
-        "uri": "widgets/eSearch/Widget",
-        "index": 4,
-        "id": "widgets_eSearch_Widget_20",
-        "config": "configs/eSearch/config_widgets_eSearch_Widget_20.json"
-      },
-      {
         "name": "PopupPanel",
         "version": "2.17",
         "uri": "widgets/PopupPanel/Widget",
-        "index": 5,
+        "index": 4,
         "id": "widgets_PopupPanel_Widget_21",
         "config": "configs/PopupPanel/config_widgets_PopupPanel_Widget_21.json"
+      },
+      {
+        "name": "EmbeddedWebsiteWidget",
+        "label": "Embedded Website",
+        "version": "0.0.1",
+        "uri": "widgets/EmbeddedWebsiteWidget/Widget",
+        "index": 5,
+        "id": "widgets_EmbeddedWebsiteWidget_Widget_23",
+        "config": "configs/EmbeddedWebsiteWidget/config_widgets_EmbeddedWebsiteWidget_Widget_23.json"
       }
     ],
     "groups": []
@@ -345,239 +346,7 @@
     "rules": []
   },
   "dataSource": {
-    "dataSources": {
-      "widget~widgets_eSearch_Widget_20~0": {
-        "id": "widget~widgets_eSearch_Widget_20~0",
-        "type": "Features",
-        "label": "Places of Interest",
-        "dataSchema": {
-          "geometryType": "esriGeometryPoint",
-          "fields": [
-            {
-              "name": "FID",
-              "type": "esriFieldTypeOID",
-              "actualType": "int",
-              "alias": "FID",
-              "sqlType": "sqlTypeInteger",
-              "nullable": false,
-              "editable": false,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "ID",
-              "type": "esriFieldTypeInteger",
-              "actualType": "int",
-              "alias": "ID",
-              "sqlType": "sqlTypeInteger",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "ADDR_INFO",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "ADDR_INFO",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "TITLE",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "TITLE",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 250,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "CATEGORY",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "CATEGORY",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 150,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "PHONE",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "PHONE",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 50,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "EMAIL",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "EMAIL",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 100,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "WEBSITE",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "WEBSITE",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "ADDRESS",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "ADDRESS",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 131,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "POSTAL_CD",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "POSTAL_CD",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 7,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "X",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "X",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "Y",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "Y",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "LONGITUDE",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "LONGITUDE",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "LATITUDE",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "LATITUDE",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "OBJECTID",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "OBJECTID",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "SRC_ADDRSS",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "SRC_ADDRSS",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 100,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "LEVEL_",
-              "type": "esriFieldTypeInteger",
-              "actualType": "int",
-              "alias": "LEVEL",
-              "sqlType": "sqlTypeInteger",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "DESCRIPTIO",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "DESCRIPTIO",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            }
-          ],
-          "displayField": "",
-          "objectIdField": {
-            "name": "FID",
-            "type": "esriFieldTypeOID",
-            "actualType": "int",
-            "alias": "FID",
-            "sqlType": "sqlTypeInteger",
-            "nullable": false,
-            "editable": false,
-            "domain": null,
-            "defaultValue": null
-          },
-          "typeIdField": ""
-        }
-      }
-    },
+    "dataSources": {},
     "settings": {}
   }
 }
